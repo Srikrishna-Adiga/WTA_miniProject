@@ -21,6 +21,7 @@ error_reporting(0);
 <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
 <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+
 </head>
 
 <body>
@@ -42,6 +43,8 @@ error_reporting(0);
             <a class="btn btn-ghost" href="#">Sign Up </a>
         </div> 
     </header>
+
+    <button onclick="topFunction()" id="topBtn" title="Go to top">^</button>
 
     <section id="features" class="section-features">
          <div class="row">
@@ -131,6 +134,7 @@ error_reporting(0);
                 </p>
             </div>
     </footer>
+    <script type="text/javascript" src="resources/js/index.js"></script>
 </body>
 </html>
         
