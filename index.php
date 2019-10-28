@@ -21,7 +21,7 @@ error_reporting(0);
 <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
 <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="resources/css/style.css">
-
+<script type="text/javascript" src="resources/js/jquery.js"></script>
 </head>
 
 <body>
@@ -40,8 +40,8 @@ error_reporting(0);
         <div class="textbox">
            <h1>Half the wheels, twice the fun.<br> The safe way is the right way.</h1>
             <a class="btn btn-full" href="#">Book a Ride</a>
-            <a class="btn btn-ghost" href="#">Sign Up </a>
-        </div> 
+            <a class="btn btn-ghost" href="register.html">Sign Up</a>
+            
     </header>
 
     <button onclick="topFunction()" id="topBtn" title="Go to top">^</button>
@@ -78,6 +78,23 @@ error_reporting(0);
         </div>
     </section>
 
+    <!-- Signup -->
+    <div id="signup" class="modal custom-modal fade" role="dialog">
+					<div class="modal-dialog modal-dialog-centered modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Add Employee</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+                            </div>  
+                        </div>
+                    </div>
+    </div>
+
+                            
+    
+    <!-- End Signup -->
     <section id="reviews" class="section-testimonials">
             <div class="row">
                <h2> Our customers can't live without us</h2>
@@ -135,6 +152,8 @@ error_reporting(0);
             </div>
     </footer>
     <script type="text/javascript" src="resources/js/index.js"></script>
+   
+    
 </body>
 </html>
         
