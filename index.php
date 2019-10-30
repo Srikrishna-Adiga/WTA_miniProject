@@ -14,6 +14,7 @@ error_reporting(0);
 <meta name="keywords" content="">
 <meta name="description" content="">
 <title>Bike and Roll:Style Over Speed!!!</title>
+<link rel="shortcut icon" type="image/x-icon" href="resources/images/logo.png">
 <link rel="stylesheet" type="text/css" href="vendor/css/normalize.css">
 <link rel="stylesheet" type="text/css" href="vendor/css/Grid.css">
 <link rel="stylesheet" type="text/css" href="vendor/css/ionicons.min.css">
@@ -33,14 +34,14 @@ error_reporting(0);
                 <li><a href="#features">How it works</a></li>
                 <li><a href="#reviews">Customer Reviews</a></li>
                 <li><a href="#myfooter">Contact Us</a></li>
-                <li><a href="includes/login.php">Sign up</a></li>
+                <li><a href="register.html">Sign up</a></li>
                </ul>
             </div>
         </nav>
         <div class="textbox">
            <h1>Half the wheels, twice the fun.<br> The safe way is the right way.</h1>
-            <a class="btn btn-full" href="#">Book a Ride</a>
-            <a class="btn btn-ghost" href="register.html">Sign Up</a>
+            <a class="btn btn-full" href="book_ride.html">Book a Ride</a>
+            <a class="btn btn-ghost" href="login.html">Log In</a>
             
     </header>
 
@@ -78,23 +79,6 @@ error_reporting(0);
         </div>
     </section>
 
-    <!-- Signup -->
-    <div id="signup" class="modal custom-modal fade" role="dialog">
-					<div class="modal-dialog modal-dialog-centered modal-lg">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title">Add Employee</h5>
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-									<span aria-hidden="true">&times;</span>
-								</button>
-                            </div>  
-                        </div>
-                    </div>
-    </div>
-
-                            
-    
-    <!-- End Signup -->
     <section id="reviews" class="section-testimonials">
             <div class="row">
                <h2> Our customers can't live without us</h2>

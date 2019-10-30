@@ -1665,11 +1665,11 @@ table.dataTable thead > tr > td.sorting {
 	margin-bottom: 25px;
 }
 .account-box .account-btn {
-	background: #fc7b02;
-	background: -moz-linear-gradient(left, #fc7b02 0%, #c46901 100%);
-	background: -webkit-linear-gradient(left, #fc7b02 0%, #c46901 100%);
-	background: -ms-linear-gradient(left,#fc7b02 0%, #c46901 100%);
-	background: linear-gradient(to right,#fc7b02 0%, #c46901 100%);
+	background: #ff9a3b;
+        background: -moz-linear-gradient(left, #ff9a3b 0%, #d85205 100%);
+        background: -webkit-linear-gradient(left, #ff9a3b 0%, #d85205 100%);
+        background: -ms-linear-gradient(left,#ff9a3b 0%, #d85205 100%);
+        background: linear-gradient(to right,#ff9a3b 0%, #d85205 100%);
 	border: 0;
     border-radius: 4px;
     display: block;
@@ -3003,7 +3003,7 @@ table.dataTable thead > tr > td.sorting {
 	width: 80px;
 }
 .profile-img .avatar {
-	font-size: 24px;
+	font-size: 54px;
 	height: 80px;
 	line-height: 80px;
 	margin: 0;
