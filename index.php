@@ -14,22 +14,22 @@ error_reporting(0);
 <meta name="keywords" content="">
 <meta name="description" content="">
 <title>Bike and Roll:Style Over Speed!!!</title>
-<link rel="shortcut icon" type="image/x-icon" href="resources/images/logo.png">
+<link rel="shortcut icon" type="image/x-icon" href="assets/img/logo.png">
 <link rel="stylesheet" type="text/css" href="vendor/css/normalize.css">
 <link rel="stylesheet" type="text/css" href="vendor/css/Grid.css">
 <link rel="stylesheet" type="text/css" href="vendor/css/ionicons.min.css">
-<link rel="stylesheet" type="text/css" href="resources/css/style.css">
-<link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<link rel="stylesheet" type="text/css" href="assets/css/queries.css">
 <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="resources/css/style.css">
-<script type="text/javascript" src="resources/js/jquery.js"></script>
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<script type="text/javascript" src="assets/js/jquery.js"></script>
 </head>
 
 <body>
     <header>
         <nav>
            <div class="row">
-            <img src="resources/images/logo.png" alt="Bike & Roll logo" class="logo">
+            <img src="assets/img/logo.png" alt="Bike & Roll logo" class="logo">
                <ul class="main-nav">
                 <li><a href="#features">How it works</a></li>
                 <li><a href="#reviews">Customer Reviews</a></li>
@@ -101,7 +101,7 @@ error_reporting(0);
                     <div class="col span-1-of-3">
                     <blockquote>
                         <?php echo htmlentities($result->Testimonial);?>
-                        <cite> <img src="resources/images/customer.png" alt="" /><?php echo htmlentities($result->FullName);?></cite>
+                        <cite> <img src="assets/img/customer.png" alt="" /><?php echo htmlentities($result->FullName);?></cite>
                     </blockquote>
                     </div>
                 <?php }?>
@@ -135,7 +135,7 @@ error_reporting(0);
                 </p>
             </div>
     </footer>
-    <script type="text/javascript" src="resources/js/index.js"></script>
+    <script type="text/javascript" src="assets/js/index.js"></script>
    
     
 </body>
