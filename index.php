@@ -40,7 +40,7 @@ error_reporting(0);
         </nav>
         <div class="textbox">
            <h1>Half the wheels, twice the fun.<br> The safe way is the right way.</h1>
-            <a class="btn btn-full" href="book_ride.html">Book a Ride</a>
+            <a class="btn btn-full" href="book_ride.php">Book a Ride</a>
             <a class="btn btn-ghost" href="login.html">Log In</a>
             
     </header>

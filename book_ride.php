@@ -1,3 +1,12 @@
+<?php
+    include_once('database.php');
+    if(!isset($_SESSION['login'])){
+        header('location:login.html');
+    }
+    $user_id=$_SESSION['id'];
+    $name=$_SESSION['fname'];
+    ?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -35,8 +44,17 @@
         background: -webkit-linear-gradient(left, #ff9a3b 0%, #d85205 100%);
         background: -ms-linear-gradient(left,#ff9a3b 0%, #d85205 100%);
         background: linear-gradient(to right,#ff9a3b 0%, #d85205 100%);">
-            <div>
-                <img src="assets/img/logo_black.png" alt="Bike & Roll" style="height: 100px;width: auto;float: left;margin-top: 20px;margin-left: 20px;">
+        <div class="row">
+            <div class="col-lg-9">
+                <img src="assets/img/logo_black.png" alt="Bike & Roll" style="height: 100px;width: auto;float: left;margin-top: 20px;margin-left: 20px;"> 
+            </div>
+            <div class="col-lg-3">
+            <a style="float:right; padding:10px; margin-bottom:10px;" class="btn btn-ghost" href="index.php">Log Out</a>
+            
+            <h4 style="float:right;"><?php echo $name ?></h4>
+                <img src="assets/img/customer.png" alt="user" style="height: 30px;width: auto;float: right;">
+                
+               
             </div>
 
         </header>
