@@ -1,6 +1,6 @@
 <?php
 session_start();
-$conn=mysqli_connect("localhost","root","","bikeRentalSK");
+$conn=mysqli_connect("localhost","root","","bikerentalsk");
 if(isset($_POST['pop'])){
 $name=$_POST['fN'];
 $phno=$_POST['ph'];
@@ -24,7 +24,7 @@ if($sql==TRUE){
     echo '<script language="javascript">';
         echo 'alert("Details entered successfully")';
         echo '</script>';
-        echo "<script> window.location.assign('book_ride.html'); </script>";
+        echo "<script> window.location.assign('login.html'); </script>";
 
         
 }
@@ -43,14 +43,14 @@ if(isset($_POST['login'])){
     $query="SELECT * from users where Email='$name'";
     $sql=mysqli_query($conn,$query);
     $row=mysqli_fetch_assoc($sql);
-    if(password_verify($pwd,$row[Password])){
+    if(password_verify($pwd,$row['Password'])){
         $_SESSION['id']=$row['id'];
         $_SESSION['fname']=$row['FullName'];
         $_SESSION['login']=true;
         echo '<script language="javascript">';
         echo 'alert("Login successful")';
         echo '</script>';
-        echo "<script> window.location.assign('book_ride.html'); </script>";
+        echo "<script> window.location.assign('book_ride.php'); </script>";
 
     }
     else{
@@ -61,4 +61,5 @@ if(isset($_POST['login'])){
 
     }
 }
+
 ?>

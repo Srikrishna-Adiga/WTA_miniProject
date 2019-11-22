@@ -33,7 +33,7 @@ error_reporting(0);
                <ul class="main-nav">
                 <li><a href="#features">How it works</a></li>
                 <li><a href="#reviews">Customer Reviews</a></li>
-                <li><a href="#myfooter">Contact Us</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
                 <li><a href="register.html">Sign up</a></li>
                </ul>
             </div>
@@ -113,11 +113,8 @@ error_reporting(0);
             <div class="row">
                 <div class="col span-1-of-2">
                     <ul class="footer-nav">
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Press</a></li>
-                        <li><a href="#">ios App</a></li>
-                        <li><a href="#">Android App</a></li>
+                        <li><a href="aboutus.html">About us</a></li>
+                       
                     </ul>
                 </div>
                 <div class="col span-1-of-2">

@@ -22,39 +22,43 @@ function topFunction() {
 
  //POPUP Function
 
-function myFunction() {
-  var popup = document.getElementById("myPopup");
-  popup.classList.toggle("show");
+var bikemap = {
+  'popBtn1' : "myModal1",
+  'popBtn2' : "myModal2",
+  'popBtn3' : "myModal3",
+  'popBtn4' : "myModal4",
+  'popBtn5' : "myModal5",
+  'popBtn6' : "myModal6",
+  'popBtn7' : "myModal7",
+  'popBtn8' : "myModal8",
+  'popBtn9' : "myModal9",
+  'popBtn10' : "myModal10",
+  'popBtn11' : "myModal11",
+  'popBtn12' : "myModal12",
 }
 
-var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("popBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
+var modal,span;
+function popit(ele){
+ modal = document.getElementById(bikemap[ele]);
 // When the user clicks on the button, open the modal
-btn.onclick = function() {
   modal.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
+window.addEventListener("click",function(event){
   if (event.target == modal) {
+    
     modal.style.display = "none";
   }
-}
+});
+
+
 
 /*-----------FUNCTION FOR DISTANCES-------*/
+var imgno;
 function getPrice(clicked_id){
-  //alert(clicked_id);
+
   var src = document.getElementById("fromPlace");
   var srcPlace = src.options[src.selectedIndex].text;
   var dest = document.getElementById("toPlace");
@@ -109,10 +113,28 @@ function getPrice(clicked_id){
     dist=0;
   }
     var price;
+    alert(dist);
+    alert(clicked_id);
     if(clicked_id==1)
     {
       price=dist*10;
-      document.getElementById("price").innerHTML=price;
+      
+      alert("The price for the selected trip is "+price);
+    }
+    else if(clicked_id==2)
+    {
+      price=dist*7;
+      
+      alert("The price for the selected trip is "+price);
+    }
+    else if(clicked_id==3)
+    {
+      price=dist*5;
+      
+      alert("The price for the selected trip is "+price);
+    }
+    else{
+      alert("Enter proper Source and Destination")
     }
   
 }
